@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
+
+body {
+  margin: 0;
+  font-family: quicksand, sans-serif;
+  font-size: 17px;
+  color: #ffffff;
+  line-height: 1.3;
+  background-color: #000000;
+}
+
+#showcase {
+  background-image: url("images/laaanding-01.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  border-radius: 0 0 50% 50%;
+}
+
+#showcase h1 {
+  font-size: 50px;
+  color: white;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+#button_div {
+  text-align: center;
+}
+
+.a_relax {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px solid;
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.b_relax {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px solid;
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.c_relax {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px solid;
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.d_relax {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px solid;
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.e_relax {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px solid;
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.f_relax {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px solid;
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.g_relax {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px solid;
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.h_relax {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px solid;
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.j_relax {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px solid;
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.k_relax {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px solid;
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+button:hover {
+  background: #ed6cff;
+  color: #ffffff;
+}
+
+#ruls,
+#p_play {
+  color: #ff776f;
+}
+
+#p_play {
+  color: #ff776f;
+  font-size: 22px;
+}
+
+.sudoku_ruls {
+  text-align: center;
+  margin: 50px;
+  bottom: 100px;
+}
+#div_play_button {
+  text-align: center;
+}
+#Move_to_play {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px solid;
+  padding: 5px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#Move_to_play:hover {
+  background: #ed6cff;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 70px;
+  color: #ff776f;
+}
+#enjoy {
+  font-size: 30px;
+}
+
+table {
+  border: 2px solid #ed6cff;
+  border-collapse: collapse;
+  text-align: center;
+  margin-left: 32.5%;
+  margin-right: 32.5%;
+}
+
+td {
+  border: 1px solid #ff776f;
+  vertical-align: middle;
+}
+
+input {
+  color: #ffffff;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  background-color: #000000;
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+input:disabled {
+  background-color: #ed6cff;
+}
+
+#cell-2,
+#cell-5,
+#cell-8,
+#cell-11,
+#cell-14,
+#cell-20,
+#cell-23,
+#cell-32,
+#cell-38,
+#cell-35,
+#cell-41,
+#cell-44,
+#cell-47,
+#cell-29,
+#cell-50,
+#cell-56,
+#cell-59,
+#cell-65,
+#cell-68,
+#cell-74,
+#cell-77 {
+  border-right: 2px solid #ed6cff;
+  text-align: center;
+}
+
+#cell-27,
+#cell-28,
+#cell-29,
+#cell-30,
+#cell-31,
+#cell-32,
+#cell-33,
+#cell-34,
+#cell-35,
+#cell-54,
+#cell-55,
+#cell-56,
+#cell-57,
+#cell-58,
+#cell-59,
+#cell-60,
+#cell-61,
+#cell-62 {
+  border-top: 2px solid #ed6cff;
+  text-align: center;
+}
+
+.level {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px solid;
+  background-color: black;
+  padding: 5px 20px;
+  border-radius: 100%;
+  text-align: center;
+  height: 80px;
+  width: 110px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+#alert {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff776f;
+}
+#alert1 {
+  font-size: 20px;
+  color: #ff776f;
+}
+/* 2nd screen */
+
+#showcase2 {
+  background-image: url("images/laaanding-01.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  border-radius: 0 0 50% 50%;
+}
+
+#showcase2 h1 {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+
+#showcase2 p {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.button_level {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px;
+  padding: 5px 20px;
+  border-radius: 100%;
+  text-align: center;
+  height: 80px;
+  width: 110px;
+}
+#div_clue {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+#B_clue {
+  font-size: 18px;
+  background-color: #000000;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px solid;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+#B_clue:hover {
+  background: #ed6cff;
+  color: #ffffff;
+}
+#B_clue3 {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ed6cff;
+  border: #ed6cff 2px solid;
+  background-color: black;
+  padding: 5px 20px;
+  border-radius: 100%;
+  text-align: center;
+  height: 80px;
+  width: 110px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+#B_clue3:hover {
+  background: #ed6cff;
+  color: #ffffff;
+}
+#minutes,
+#seconds,
+#point,
+#minutes2,
+#seconds2,
+#point2 {
+  color: #ff776f;
+}

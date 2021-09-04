@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Wobble sudoku level 3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='sudokuscreen3.css'>
+</head>
+<body>
+    <header id="showcase">
+        <h1>Welcome to Wobble sudoku level 3</h1>
+        <p>First of all we recommend you to choose music from our selection of songs, now please take your time and enjoy.</p>
+        <br><br>
+        <h2>Choose your music by style, just press the button</h2>
+    </header>
+    <br/> <br/>
+    <div id="button_div">
+        <button class="a_relax" onclick="play1()">Funk<br>Style</button>
+        <audio id="audio1" src="01 WBBL - Funk Stepper (Original) [Ghetto Funk].mp3"></audio>
+        <button class="b_relax" onclick="play2()">Funk<br>Style</button>
+        <audio id="audio2" src="01 WBBL - Get Back! [Ghetto Funk].mp3"></audio>
+        <button class="c_relax" onclick="play3()">Rap<br>Style</button>
+        <audio id="audio3" src="I know what you want Busta Rhymes Ft. Mariah Carey & Flipmode Squad.mp3"></audio>
+        <button class="d_relax" onclick="play4()">Rap<br>Style</button>
+        <audio id="audio4" src="Nate Dogg - I Got Love.mp3"></audio>
+        <button class="e_relax" onclick="play5()">R&B<br>Style</button>
+        <audio id="audio5" src="D'Angelo-Brown Sugar.mp3"></audio>
+        <button class="f_relax" onclick="play6()">Hop<br>Style</button>
+        <audio id="audio6" src="O.T. Genasis - I Look Good [Official Audio].mp3"></audio>
+        <button class="g_relax" onclick="play7()">R&B<br>Style</button>
+        <audio id="audio7" src="erykah badu Appletree.mp3"></audio>
+        <button class="h_relax" onclick="play8()">R&B<br>Style</button>
+        <audio id="audio8" src="Bill Withers - Ain't No Sunshine (Audio).mp3"></audio>
+        <button class="j_relax" onclick="play9()">Rap<br>Style</button>
+        <audio id="audio9" src="Nate Dogg - I Got Love.mp3"></audio>
+        <button class="k_relax" onclick="play10()">DJ<br>Style</button>
+        <audio id="audio10" src="Spoonbill - Tinkerbox - 02 - Give Me Rain.mp3"></audio>
+    </div>
+    <br/>
+    <div class="sudoku_ruls">
+        <h2 id="ruls">The Rules of Sudoku</h2><br>
+        <p>The classic Sudoku game involves a grid of 81 squares. The grid is divided into nine blocks, each containing nine squares.</p>
+        <br>
+        <p> The rules of the game are simple: each of the nine blocks has to contain all the numbers 1-9 within its squares. Each number can only appear once in a row, column or box.</p>
+        <br>
+        <p></p>The difficulty lies in that each vertical nine-square column, or horizontal nine-square line across, within the larger square, must also contain the numbers 1-9, without repetition or omission.</p>
+        <br>
+        <p> Every puzzle has just one correct solution.</p>
+        <br>
+        <p id="p_play">Ready to play ?</p>
+    </div >
+    <div id="div_play_button">
+    <a id="Move_to_play"  role="button" onclick="showDiv3()">play!</a>
+    </div>
+    <br><br><br>
+
+    <div id="play" style="display:none;" class="container">
+        <h1>Level 3<span id="enjoy">,enjoy!</span></h1>
+        <table id="grid">
+            <tr id="row1">
+                <td class='cell'><input id="cell-0"  type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-1" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-2" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell'><input id="cell-3" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-4" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-5" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell'><input id="cell-6" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-7" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-8" type="number" maxlength="1" min="1" max="9" value=></td>
+
+
+            </tr>
+
+            <tr id="row2">
+                <td class='cell'><input id="cell-9" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-10" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-11" type="number" maxlength="1" min="1" max="9" value=> </td>
+
+
+                <td class='cell'><input id="cell-12" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-13" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-14" type="number" maxlength="1" min="1" max="9"></td>
+
+                <td class='cell'><input id="cell-15" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-16" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-17" type="number" maxlength="1" min="1" max="9" value=></td>
+            </tr>
+            <tr id="row3">
+
+                <td class='cell'><input id="cell-18" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-19" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-20" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell'><input id="cell-21" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-22" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-23" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell'><input id="cell-24" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-25" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-26" type="number" maxlength="1" min="1" max="9" value=></td>
+
+            </tr>
+            <tr id="row4">
+
+                <td class='cell'><input id="cell-27" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-28" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-29" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell'><input id="cell-30" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-31" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-32" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell'><input id="cell-33" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-34" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-35" type="number" maxlength="1" min="1" max="9" value=></td>
+            </tr>
+            <tr id="row5">
+
+                <td class='cell'><input id="cell-36" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-37" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-38" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell'><input id="cell-39" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-40" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-41" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell'><input id="cell-42" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-43" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-44" type="number" maxlength="1" min="1" max="9" value=></td>
+
+            </tr>
+            <tr id="row6">
+
+                <td class='cell' ><input id="cell-45" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell' ><input id="cell-46" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell' ><input id="cell-47" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell' ><input id="cell-48" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell' ><input id="cell-49" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell' ><input id="cell-50" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell' ><input id="cell-51" type="number" maxlength="1" min="1" max="9"></td>
+                <td class='cell' ><input id="cell-52" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell' ><input id="cell-53" type="number" maxlength="1" min="1" max="9" value=></td>
+
+
+
+            </tr>
+            <tr id="row7">
+
+
+                <td class='cell'><input id="cell-54" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-55" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-56" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell'><input id="cell-57" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-58" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-59" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell'><input id="cell-60" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-61" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-62" type="number" maxlength="1" min="1" max="9" value=></td>
+
+
+
+            </tr>
+            <tr id="row8">
+
+                <td class='cell'><input id="cell-63" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-64" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-65" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell'><input id="cell-66" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-67" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-68" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell'><input id="cell-69" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-70" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-71" type="number" maxlength="1" min="1" max="9" value=></td>
+
+
+
+
+            </tr>
+            <tr id="row9">
+                <td class='cell'><input id="cell-72" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-73" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-74" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell'><input id="cell-75" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-76" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-77" type="number" maxlength="1" min="1" max="9" value=></td>
+
+                <td class='cell'><input id="cell-78" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-79" type="number" maxlength="1" min="1" max="9" value=></td>
+                <td class='cell'><input id="cell-80" type="number" maxlength="1" min="1" max="9" value=></td>
+            </tr>
+
+        </table>
+        <br/>
+    <div id="alert"></div>
+    <br>
+    <br>
+    <div  id="play1" style="display:none;">
+        <button class="level" onclick='again3()'>  Again</button>
+        <button class="level" onclick='grid_level3()'> Done</button>
+        <button id="B_clue3" onclick='clue_level3(matrix)'>clue ?</button>
+    </div>
+    </div>
+
+
+    <script src='sudoku.js'></script>
+</body>
+</html>
