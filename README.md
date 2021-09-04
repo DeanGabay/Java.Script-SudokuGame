@@ -5,9 +5,9 @@ Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
-You need to import the project to git desktop.
-In the terminal of the repository path register <npm install>.
-After <npm start>.
+-You need to import the project to git desktop.
+-In the terminal of the repository path register <npm install>.
+-After <npm start>.
 
-Contact
+Contact:
 If you want to contact me you can reach me at deangabay569@gmail.com.
